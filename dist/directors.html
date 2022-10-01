@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221001134733" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css?_v=20221001134733">
-    <title>Контакты</title>
+    <title>Совет директоров</title>
 </head>
 
 <body>
@@ -77,73 +77,98 @@
     </header>
 </div>
  <main>
-  <section class="contacts">
-  <div class="wrapper-1300">
-    <div class="contacts__map">
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221001134733"
-        type="text/javascript"></script>
-      <script>
-        var myMap;
-        ymaps.ready(init);
-        function init() {
-          myMap = new ymaps.Map('map', {
-            center: [55.739255, 37.508229],
-            zoom: 17,
-            controls: ['zoomControl',]
-          }, {
-            // searchControlProvider: 'yandex#search'
-          });
-          var myPlacemark = new ymaps.Placemark([55.739255, 37.508229], {
-            balloonContentHeader: '<img src="./img/mark.svg">',
-            balloonContentBody: "г.Москва, ул. Барклая, д 6с5",
-            balloonContentFooter: "Мы ждем",
-            hintContent: "Офис МОСТОТРЕСТ"
-          }, {
-            iconLayout: 'default#image',
-            iconImageHref: "./img/mark.svg",
-            iconImageSize: [40, 40],
-            iconImageOffset: [0, 0],
-          });
-          myMap.geoObjects.add(myPlacemark)
-          myMap.behaviors
-            .disable(['rightMouseButtonMagnifier', "scrollZoom"])
-        }        
-      </script>
-      <div id="map"></div>
-    </div>
-    <div class="contacts__us">
-      <div class="contacts__title">
-        <h2>Контакты</h2>
-        <a href="https://yandex.by/maps/213/moscow/house/ulitsa_barklaya_6s5/Z04YcwdoS0cOQFtvfXtyeH5mYQ==/?ll=37.508230%2C55.739255&z=17.07"
-          class="contacts__link"><img src="img/contacts-map.svg" alt="">Россия, 121087, г. Москва, ул. Барклая, д. 6,
-          стр. 5</a>
-        <a href="mailto:mostro@mostro.ru" class="contacts__link"><img src="img/contacts-phone.svg"
-            alt="">mostro@mostro.ru</a>
-      </div>
-      <div class="contacts__phone">
-        <a href="tel:+74956697999" class="contacts__link"><img src="img/contacts-phone.svg" alt="">+7 (495)
-          669-79-99</a>
-        <a href="tel:+74956697711" class="contacts__link"><img src="img/contacts-printer.svg" alt="">+7 (495)
-          669-77-11</a>
-      </div>
-      <div class="contacts__send">
-        <h3>Связаться с нами</h3>
-        <div class="inputs-container">
-          <input type="text" name="organization" placeholder="Организация*">
-          <input type="text" name="name" placeholder="ФИО">
-          <input type="text" name="position" placeholder="Должность">
-          <input type="text" name="phone" placeholder="Телефон">
-          <input type="text" name="mail" placeholder="E-mail">
-          <textarea name="text" placeholder="Сообщение"></textarea>
-        </div>
-        <div class="checked-block">
-          <input type="checkbox" name="" id="">
-          <p>Я согласен на обработку персональных данных и с <a href="#">политикой конфиденциальности</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+   <section class="directors-title">
+ <div class="wrapper-1300">
+  <h1>Совет директоров</h1>
+  <p>Совет директоров несёт коллективную ответственность перед акционерами за успешность деятельности компании. Совет
+  директоров осуществляет общее руководство деятельностью Компании, за исключением вопросов, отнесённых ФЗ «Об акционерных
+  обществах» и Уставом Общества к компетенции Общего собрания акционеров</p>
+ </div>
 </section>
+   <section class="directors-block">
+ <div class="wrapper-1300">
+  <h6>Совет директоров определяет приоритетные направления деятельности и стратегии Компании, обеспечивает соответствие
+  стратегических целей интересам акционеров и наличие необходимых ресурсов для достижения этих целей</h6>
+  <div class="directors-container">
+   <div class="directors-box">
+    <img src="img/directors/byrukov.png" alt="">
+    <div class="director-info">
+     <p class="position">Член Совета директоров</p>
+     <h3 class="name">Бирюков Евгений Николаевич</h3>
+     <a href="#" class="biografy">Биография</a>
+    </div>
+   </div>
+   <div class="directors-box">
+    <img src="img/directors/volnov.png" alt="">
+    <div class="director-info">
+     <p class="position">Член Совета директоров</p>
+     <h3 class="name">Вольнов Сергей Владимирович</h3>
+     <a href="#" class="biografy">Биография</a>
+    </div>
+   </div>
+   <div class="directors-box">
+    <img src="img/directors/dobryakov.png" alt="">
+    <div class="director-info">
+     <p class="position">Член Совета директоров</p>
+     <h3 class="name">Добряков Павел Александрович</h3>
+     <a href="#" class="biografy">Биография</a>
+    </div>
+   </div>
+   <div class="directors-box">
+    <img src="img/directors/karelyna.png" alt="">
+    <div class="director-info">
+     <p class="position">Независимый директор</p>
+     <h3 class="name">Карелина Мария Юрьевна</h3>
+     <a href="#" class="biografy">Биография</a>
+    </div>
+   </div>
+   <div class="directors-box">
+    <img src="img/directors/poderegin.png" alt="">
+    <div class="director-info">
+     <br class="position">Генеральный директор, <br> член Совета директоров</p>
+     <h3 class="name">Подерёгин Александр Николаевич</h3>
+     <a href="#" class="biografy">Биография</a>
+    </div>
+   </div>
+   <div class="directors-box">
+    <img src="img/directors/prihodko.png" alt="">
+    <div class="director-info">
+     <p class="position">Независимый директор</p>
+     <h3 class="name">Приходько Вячеслав Михайлович</h3>
+     <a href="#" class="biografy">Биография</a>
+    </div>
+   </div>
+   <div class="directors-box">
+    <img src="img/directors/spiridonov.png" alt="">
+    <div class="director-info">
+     <p class="position">Член Совета директоров</p>
+     <h3 class="name">Спиридонов Алексей Евгеньевич</h3>
+     <a href="#" class="biografy">Биография</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+   <section class="directors-text">
+ <div class="wrapper-1300">
+  <h5>Совет директоров несет ответственность за общее управление компанией</h5>
+  <p>Имеет полномочия в сфере решения таких вопросов, как приоритеты развития бизнеса компании; утверждение крупных сделок,
+  постановка задач руководству Компании и контроль их реализации, созыв ежегодных и внеочередных Общих собраний
+  акционеров, кроме обстоятельств, обозначенных в Законе об акционерных обществах и Уставе ПАО «Мостотрест»; размещение
+  облигаций и других ценных бумаг компании в соответствии с Законом об акционерных обществах и другие вопросы
+  в соответствии с Законом об акционерных обществах и Уставом Общества. В настоящее время Совет директоров состоит
+  из 7 человек.</p>
+ </div>
+</section>
+<section class="directors-meetings">
+ <div class="wrapper-1300">
+  <h5>Заседания Совета директоров</h5>
+  <p>Заседания Совета директоров проходят не реже четырёх раз в год по заранее разработанному графику. Решения на заседании
+  Совета директоров принимаются большинством в три четверти голосов от числа избранных членов Совета директоров, при этом
+  каждый из директоров обладает одним голосом.</p>
+ </div>
+</section>
+
  </main>
  <footer class="footer">
     <div class="footer__wrapper">

@@ -65,12 +65,14 @@
     }
 
     &__bottom{
+        position: relative;
         display: flex;
         height: 42px;
         margin-top: 30px;
         justify-content: space-between;
         overflow: hidden;
         transition: all .3s;
+        z-index: 5600;
         .header__nav:nth-child(1){
             margin-left: 25px;
         }

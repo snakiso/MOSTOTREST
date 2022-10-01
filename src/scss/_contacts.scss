@@ -1,0 +1,84 @@
+.contacts {
+    background-image: url(../img/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    .wrapper-1300{
+     min-height: 900px;
+     display: flex;
+     padding-top: 110px;
+     padding-bottom: 160px;
+     column-gap: 30px;
+    }
+    &__map{
+     flex-basis: 50%;
+    } 
+
+    #map{
+     min-height: 900px;
+    }
+    &__us{
+        flex-basis: 50%;
+    }
+    &__title{
+     display: flex;
+     flex-direction: column;
+     h2{
+      color: rgba(0, 74, 140, 1);
+      font-size: 38px;
+      margin-bottom: 20px;
+     }
+     a{
+      margin-top: 10px;
+     }
+    }
+    &__link{
+     display: flex;
+     align-items: center;
+     column-gap: 10px;
+     color: rgba(0, 74, 140, 1);
+    }
+
+    &__phone{
+        margin-top: 60px;
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__send{
+        margin-top: 40px;
+        h3{
+            color: rgba(0, 74, 140, 1);
+            font-size: 28px;
+        }
+        .inputs-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            input{
+                margin-bottom: 20px;
+                height: 46px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #A5A5A5;
+            }
+            textarea{
+                height: 106px;
+                resize: none;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #A5A5A5; 
+                margin-bottom: 20px;
+            }
+            ::placeholder {
+                color: #A5A5A5;
+            }
+        }
+        .checked-block{
+            display: flex;
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
