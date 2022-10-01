@@ -1,0 +1,19 @@
+Локально сохранение npm --- npm i gulp -D
+Удаление файлов --- npm i -D del 
+Сборщик --- npm i -D gulp-file-include
+Поиск и замена символов --- npm i -D gulp-replace
+Уменьшение веса картинок --- npm i -D gulp-webp-html-nosvg
+Чтобы не кэшировалось -_- --- npm i -D gulp-version-number
+Обработка ошибок ---  npm i -D gulp-plumber
+Подсказки --- npm i -D gulp-notify
+Локальный сервер --- npm i -D browser-sync
+Sass --- npm i -D sass
+Gulp-Sass ---  npm i -D gulp-sass
+Переименование --- npm i -D gulp-rename
+Сжатие css файла --- npm i -D gulp-clean-css
+Конвертор WebP --- npm i -D webp-converter@2.2.3
+Вывод WEBP изображений --- npm i -D gulp-webpcss
+Добавление вендорных префиксов --- npm i -D gulp-autoprefixer
+Группировка медиа запросов --- npm i -D gulp-group-css-media-queries
+WEBPACK --- npm i -D webpack webpack-stream
+Работа со шрифтами --- npm i -D fs gulp-fonter gulp-ttf2woff2

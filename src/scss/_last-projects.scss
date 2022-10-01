@@ -1,0 +1,86 @@
+.last-projects{
+    .wrapper-1300{
+        padding-top: 160px;
+        padding-bottom: 40px;
+        h3{
+            font-size: 48px;
+            color: #004A8C;
+            max-width: 1000px;
+        }
+        p{
+            font-size: 20px;
+            color:#1D1D1B;
+            max-width: 1090px;
+        }
+    }
+    .last-projects-slider{
+        overflow: hidden;
+        padding-bottom: 240px;
+
+        .buttons-block{
+            padding-top: 40px;
+            max-width: 1300px;
+            margin: auto;
+            column-gap: 20px;
+            display: flex;
+            .swiper-button-prev, .swiper-button-next{
+                position: relative;
+                cursor: pointer;
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                border: 1px solid #A5A5A5;
+            }
+            .swiper-button-prev:before, .swiper-button-next:before{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-top: 1px solid #A5A5A5;
+                border-right: 1px solid #A5A5A5;
+            }
+            .swiper-button-prev:before{
+                transform: rotate(-135deg);
+                top: calc(50% - 5px);
+                left: 40%;
+            }
+            .swiper-button-next:before{
+                transform: rotate(45deg);
+                top: calc(50% - 5px);
+                right: 40%;
+            }
+        }
+
+        .swiper-wrapper{
+            display: flex;
+            .swiper-slide{
+                background: #004A8C;
+                position: relative;
+                width: 100%;
+                img{
+                    display: block;
+                    width: inherit;
+                }
+    
+                p{ 
+                    position: absolute;
+                    font-size: 20px;
+                    font-weight: 700;
+                    bottom: 25px;
+                    left: 25px;
+                    color: white;
+                    opacity: 0;
+                    transition: all .3s;
+                }
+            }
+            .swiper-slide:hover{
+                p{
+                    opacity: 1;
+                }
+                img{
+                    opacity: 0.35;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.reorganization{
+    background-image: url(../img/reorganization-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    &__wrapper{
+        color: white;
+        padding: 160px 0;
+        h5{
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+.reorganization::before, .reorganization::after{
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: 0;
+    width: 980px;
+    height: 8px;
+    background: #E5B062;
+}
+.reorganization::after{
+    bottom: -8px;
+    top: auto;
+    right: 0;
+    left: auto;
+}

@@ -1,0 +1,70 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: auto
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+.btn-box {
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    background: #209AD7;
+    border-radius: 4px;
+    width: 260px;
+    height: 55px;
+    border: none;
+}
+
+.mini-btn{
+    background: none;
+    border: 0.5px solid white;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper-1300{
+    max-width: 1300px;
+    margin: auto;
+}
+
+@import 'header';
+@import 'hero';
+@import 'reorganization';
+@import 'founded';
+@import 'error';
+@import 'footer';
+@import 'last-projects';

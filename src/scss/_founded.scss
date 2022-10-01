@@ -1,0 +1,133 @@
+.founded {
+    background: #F9F9F9;
+    padding-bottom: 160px;
+
+    &__wrapper {
+        padding-top: 160px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__year {
+        font-size: 48px;
+        color: #004A8C;
+        flex-basis: 47%;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    &__text {
+        position: relative;
+        font-size: 20px;
+        line-height: 28px;
+        flex-basis: 47%;
+        border-top: 0.5px solid #A5A5A5;
+
+        p {
+            margin: 40px 0 0 0
+        }
+    }
+
+    &__rewards {
+        color: #4A4A49;
+
+        h6 {
+            font-size: 28px;
+            line-height: 60px;
+            font-weight: 700;
+            color: #4A4A49;
+            border-bottom: 0.5px solid #A5A5A5;
+            ;
+        }
+
+        .rewards-block {
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            .rewards-box {
+                border: 1px solid #E4E4E4;
+                background: white;
+                max-width: 635px;
+                column-gap: 40px;
+                display: flex;
+                flex: 1;
+                height: 230px;
+                align-items: center;
+
+                img {
+                    width: 135px;
+                    height: 150px;
+                    margin-left: 60px;
+                }
+
+                p {
+                    font-size: 28px;
+                    font-weight: 700;
+                    max-width: 260px;
+                }
+            }
+        }
+    }
+
+    &__achievements {
+        position: relative;
+
+        .achievements-container {
+            display: flex;
+        }
+
+        .achievements-box {
+            position: relative;
+            z-index: 2;
+            border: 1px solid #E4E4E4;
+            background-color: white;
+            height: 260px;
+            flex: 1;
+
+            h2 {
+                font-size: 62px;
+                margin: 60px 0 0 40px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-left: 40px;
+                max-width: 300px;
+            }
+        }
+
+        .achievements-box:nth-child(1) {
+            background: #004A8C;
+            color: white;
+        }
+
+        .achievements-box:nth-child(2) {
+            background-image: url(../img/achievements-bg.png);
+            background-repeat: no-repeat;
+        }
+
+        .achievements-box:nth-child(2),
+        .achievements-box:nth-child(3) {
+            h2 {
+                color: #004A8C;
+            }
+        }
+    }
+
+    &__achievements:before {
+        position: absolute;
+        content: '';
+        background: #E5B062;
+        height: 8px;
+        width: 100%;
+        top: 50%;
+        z-index: 1;
+    }
+}
