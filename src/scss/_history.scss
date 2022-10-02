@@ -1,0 +1,192 @@
+.history-hero {
+ background-image: url(../img/history/history-bg.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: left;
+
+ .wrapper-1300 {
+  padding-top: 290px;
+  color: white;
+  padding-bottom: 140px;
+
+  h2 {
+   font-size: 74px;
+   margin: 0;
+  }
+
+  p {
+   font-size: 20px;
+   margin-top: 40px;
+   font-weight: 700;
+   max-width: 650px;
+  }
+ }
+}
+
+.history {
+ margin: 160px 0;
+
+ &__box::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  background: rgba(229, 176, 98, 1);
+  z-index: 5;
+ }
+
+ &__box {
+  position: relative;
+  height: 400px;
+ }
+
+ &__inner-box {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  justify-content: space-between;
+ }
+
+ &__photo {
+  position: relative;
+  width: 480px;
+  height: 300px;
+
+  .photo-front {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 2;
+  }
+
+  .photo-back {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+  }
+ }
+
+ &__info {
+  span {
+   display: block;
+   margin-top: 15px;
+   font-size: 28px;
+   font-weight: 700;
+   color: rgba(165, 165, 165, 1);
+  }
+
+  h3 {
+   color: rgba(0, 74, 140, 1);
+   font-size: 40px;
+  }
+
+  max-width: 480px;
+ }
+
+ &__box:hover {
+  .history__box-hover {
+   height: 100px;
+  }
+ }
+
+ &__box-hover {
+  position: relative;
+  top: -50px;
+  height: 0;
+  width: 100%;
+  background: rgba(0, 74, 140, 1);
+  transition: all .5s;
+
+  .open-history {
+   position: absolute;
+   width: 42px;
+   height: 42px;
+   background: none;
+   border: 2px solid white;
+   border-radius: 50%;
+   top: 50%;
+   right: 520px;
+   transform: translateY(-50%);
+  }
+ }
+
+ &__full::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  background: rgba(229, 176, 98, 1);
+  z-index: 5;
+ }
+
+ &__full.open {
+  height: auto;
+  transition: all .5s;
+ }
+
+ &__full {
+  position: relative;
+  background-image: url(../img/history/full-history-decor.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: rgba(0, 74, 140, 1);
+  transition: all .5s;
+  overflow: hidden;
+  height: 0px;
+
+  .wrapper-1300 {
+   padding: 160px 0;
+   position: relative;
+
+   .history-hidden {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(90px);
+
+    img {
+     transform: rotate(-90deg);
+    }
+   }
+  }
+
+  .info-block {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+
+   .text-block {
+    margin-right: 80px;
+    max-width: 480px;
+
+    span {
+     display: block;
+     margin-bottom: 25px;
+     color: rgba(165, 165, 165, 1);
+     font-size: 28px;
+    }
+
+    h2 {
+     font-size: 40px;
+     color: white;
+     font-weight: 700;
+     margin: 0;
+    }
+
+    p {
+     color: white;
+     font-size: 20px;
+     margin: 0;
+    }
+   }
+  }
+ }
+
+}

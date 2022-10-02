@@ -1,4 +1,6 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -12,13 +14,13 @@ body {
     margin: auto
 }
 
-a{
+a {
     display: inline-block;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -35,7 +37,7 @@ button{
     border: none;
 }
 
-.mini-btn{
+.mini-btn {
     background: none;
     border: 0.5px solid white;
     height: 42px;
@@ -46,19 +48,55 @@ button{
     align-items: center;
 }
 
-::placeholder{
+::placeholder {
     color: white;
     font-family: 'Raleway', sans-serif;
 }
 
-ul{
+ul {
     padding: 0;
     list-style: none;
 }
 
-.wrapper-1300{
+.wrapper-1300 {
     max-width: 1300px;
     margin: auto;
+}
+
+.wrapper-1080 {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.back-to::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 1px;
+    left: 2px;
+    top: 50%;
+    background: rgba(74, 74, 73, 1);
+    transform: translateY(50%);
+}
+
+.back-to::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid rgba(74, 74, 73, 1);
+    border-left: 1px solid rgba(74, 74, 73, 1);
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+}
+
+.back-to {
+    position: relative;
+    font-size: 20px;
+    color: rgba(74, 74, 73, 1);
+    margin-top: 60px;
+    padding-left: 30px
 }
 
 @import 'header';
@@ -70,3 +108,5 @@ ul{
 @import 'last-projects';
 @import 'contacts';
 @import 'directors';
+@import 'object-2';
+@import 'history';

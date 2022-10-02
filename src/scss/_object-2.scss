@@ -1,0 +1,124 @@
+.object-hero {
+ background-image: url(../img/object-2-bg.png);
+ background-position: left;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ z-index: -1;
+ .wrapper-1300 {
+  padding-top: 290px;
+  padding-bottom: 140px;
+
+  h2 {
+   font-size: 48px;
+   margin: 0;
+   max-width: 1080px;
+   color: white;
+  }
+
+  span {
+   display: block;
+   margin-top: 30px;
+   font-size: 48px;
+   color: rgba(229, 176, 98, 1);
+  }
+ }
+}
+
+.object-info::before{
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 8px;
+ background: rgba(229, 176, 98, 1);
+ bottom: -4px;
+}
+.object-info {
+ background: #F9F9F9;
+ position: relative;
+ .wrapper-1080 {
+  padding-top: 60px;
+
+  p {
+   margin: 0;
+   font-size: 20px;
+   color: rgba(29, 29, 27, 1);
+  }
+
+  p:first-child {
+   margin-bottom: 20px;
+  }
+
+  p:last-child {
+   padding-bottom: 160px;
+  }
+
+ }
+ 
+ .object-important-info::before{
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 45%;
+  background: rgba(229, 176, 98, 1);
+  bottom: -7px;
+  left: 0;
+ }
+ .object-important-info.wrapper-1080 {
+  padding: 0;
+  background: #004A8C;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  p {
+   color: white;
+   font-weight: 700;
+   font-size: 20px;
+   max-width: 880px;
+  }
+  
+    p:last-child {
+     padding-bottom: 0;
+    }
+
+  .inner-container {
+   display: flex;
+   justify-content: center;
+   padding: 65px 0;
+   width: 1080px;
+   column-gap: 20px;
+  }
+ }
+}
+
+
+.object-list{
+ background-image: url(../img/one-object-bg.png);
+ background-position: bottom right;
+ background-repeat: no-repeat;
+ .wrapper-1080{
+  color: rgba(29, 29, 27, 1);
+  padding: 160px 0;
+  h6{
+   font-size: 28px;
+   margin: 30px 0;
+  }
+  ul{
+   li::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background: rgba(229, 176, 98, 1);
+   }
+   li{
+    padding-left: 25px;
+    position: relative;
+    padding-bottom: 15px;
+   }
+  }
+ }
+}
