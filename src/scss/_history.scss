@@ -112,6 +112,10 @@
   }
  }
 
+ &__box-hover.hidden{
+    display: none;
+ }
+
  &__full::before {
   position: absolute;
   content: '';
@@ -123,8 +127,7 @@
  }
 
  &__full.open {
-  height: auto;
-  transition: all .5s;
+  max-height: 10000px;
  }
 
  &__full {
@@ -133,9 +136,9 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   background-color: rgba(0, 74, 140, 1);
-  transition: all .5s;
+  transition: all 3s;
   overflow: hidden;
-  height: 0px;
+  max-height: 0px;
 
   .wrapper-1300 {
    padding: 160px 0;

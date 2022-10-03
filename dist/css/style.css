@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -1285,6 +1290,10 @@ ul {
   transform: translateY(-50%);
 }
 
+.history__box-hover.hidden {
+  display: none;
+}
+
 .history__full::before {
   position: absolute;
   content: "";
@@ -1296,8 +1305,7 @@ ul {
 }
 
 .history__full.open {
-  height: auto;
-  transition: all 0.5s;
+  max-height: 10000px;
 }
 
 .history__full {
@@ -1306,9 +1314,9 @@ ul {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-color: rgb(0, 74, 140);
-  transition: all 0.5s;
+  transition: all 3s;
   overflow: hidden;
-  height: 0px;
+  max-height: 0px;
 }
 
 .history__full .wrapper-1300 {
