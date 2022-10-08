@@ -1,0 +1,68 @@
+.main-technologies {
+ position: relative;
+
+ .wrapper-1300 {
+  position: relative;
+  padding-bottom: 300px;
+
+  .title {
+   padding-top: 160px;
+
+   h2 {
+    margin-top: 0;
+    font-size: 62px;
+    color: rgba(0, 74, 140, 1);
+   }
+
+   p {
+    font-size: 20px;
+    color: rgba(29, 29, 27, 1);
+    max-width: 560px;
+   }
+  }
+
+  .technologies {
+   background: rgba(0, 74, 140, 1);
+   background-image: url(../img/technologies-bg.png);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   position: absolute;
+   top: -70px;
+   right: -175px;
+
+   .inner-box {
+    padding: 135px 180px 135px 110px;
+    max-width: 840px;
+    color: white;
+
+    h4 {
+     font-size: 28px;
+     margin: 0;
+     padding-bottom: 25px;
+     border-bottom: 1px solid white;
+    }
+
+    ul {
+     margin-top: 50px;
+
+     li::before {
+      position: absolute;
+      content: '';
+      background-image: url(../img/technologies-point.svg);
+      width: 20px;
+      height: 25px;
+      top: 0px;
+      left: 0;
+     }
+
+     li {
+      position: relative;
+      font-size: 18px;
+      padding-bottom: 25px;
+      padding-left: 40px;
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,185 @@
+.objects-hero {
+ background-image: url(../img/map-bg.png);
+ background-position: left top;
+ background-repeat: repeat;
+
+ .wrapper-1300 {
+  position: relative;
+  padding-top: 205px;
+  padding-bottom: 40px;
+
+  h2 {
+   margin: 0;
+   font-size: 48px;
+   color: white;
+  }
+
+  .buttons-block {
+   display: flex;
+   column-gap: 20px;
+   position: absolute;
+   right: 0;
+   bottom: -78px;
+   z-index: 9000;
+   .objects-done {
+    color: rgba(0, 74, 140, 1);
+    background-color: white;
+    background-image: url(../img/object-done.png);
+    background-repeat: no-repeat;
+   }
+
+   .objects-process {
+    background-color: rgba(32, 154, 215, 1);
+    color: white;
+    background-image: url(../img/object-process.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+
+   .map-button {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    p {
+     padding: 38px 17px;
+     font-weight: 700;
+     max-width: 160px;
+    }
+   }
+  }
+
+ }
+}
+
+.build-map {
+ #map {
+  width: 100%;
+  min-height: 750px;
+ }
+
+ .ymaps-2-1-79-balloon__close-button {
+  background: url(../img/close.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+ }
+
+ .ymaps-2-1-79-balloon__layout {
+  overflow: visible;
+ }
+
+ .ymaps-2-1-79-balloon__content {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(0, 74, 140, 1);
+  color: white;
+  margin: 0 !important;
+  padding: 20px !important;
+  width: 280px;
+  overflow: visible;
+
+  div {
+   width: 66px;
+   height: 66px;
+   border: 2px solid white;
+   border-radius: 50%;
+   overflow: hidden;
+   position: absolute;
+   top: -33px;
+   right: 33px;
+
+   img {
+    width: 200%;
+   }
+  }
+
+  h5 {
+   font-size: 12px;
+   max-width: 240px;
+   margin-bottom: 0;
+  }
+
+  span,
+  p {
+   position: relative;
+   font-size: 12px;
+   color: rgba(165, 165, 165, 1);
+   max-width: 240px;
+  }
+
+  span {
+   padding-left: 20px;
+  }
+
+  span:before {
+   position: absolute;
+   content: '';
+   width: 8px;
+   height: 8px;
+   background: rgba(229, 176, 98, 1);
+   left: 0;
+   top: calc(50% - 4px);
+   border-radius: 50%;
+  }
+
+  p {
+   border-bottom: 1px solid rgba(32, 154, 215, 1);
+  }
+
+  a {
+   color: rgba(32, 154, 215, 1);
+   text-decoration: underline;
+  }
+ }
+
+ .ymaps-2-1-79-balloon__tail:after {
+  background-color: rgba(0, 74, 140, 1);
+ }
+}
+
+.all-objects::before{
+ position: absolute;
+ content: '';
+ height: 8px;
+ width: 100%;
+ background: rgba(229, 176, 98, 1);
+ top: 28%;
+ z-index: -1;
+}
+.all-objects{
+ position: relative;
+ margin-top: 80px;
+ margin-bottom: 160px;
+ .wrapper-1300{
+  .objects-block{
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 30px;
+   row-gap: 30px;
+   .objects-box{
+    background: white;
+    border: 1px solid rgba(228, 228, 228, 1);
+    .inner-box{
+     max-width: 410px;
+     padding: 20px 14px 0 16px;
+     .objects-photo{
+      display: flex;
+      column-gap: 15px;
+     }
+     .objects-link{
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(0, 74, 140, 1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     p{
+      font-size: 18px;
+      font-weight: 700;
+      color: rgba(74, 74, 73, 1);
+     }
+    }
+   }
+  }
+ }
+}

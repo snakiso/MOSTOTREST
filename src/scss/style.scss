@@ -104,6 +104,68 @@ ul {
     padding-left: 30px
 }
 
+.pages-block {
+    margin-top: 40px;
+    width: 180px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .change-page {
+        height: 30px;
+        width: 30px;
+        background: none;
+        color: rgba(165, 165, 165, 1);
+        border: 1px solid rgba(165, 165, 165, 1);
+        border-right: none;
+    }
+
+    .change-page.active{
+        color: rgba(0, 74, 140, 1);
+        border: 1px solid rgba(0, 74, 140, 1);
+        font-weight: 700;
+    }
+
+    .prev-page,
+    .next-page {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        background: none;
+        border: 1px solid rgba(165, 165, 165, 1);
+    }
+    
+    .prev-page:before, .next-page::before{
+        position: absolute;
+        content: '';
+        border-bottom: 1px solid rgba(165, 165, 165, 1);
+        border-left: 1px solid rgba(165, 165, 165, 1) ;
+        top: 40%;
+        width: 8px;
+        height: 8px;
+        left: 12px;
+        transform: rotate(45deg);
+    }
+
+        .next-page::before{
+            transform: rotate(-135deg);
+            right: 12px;
+            left: auto;
+        }
+
+    .prev-page{
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-right: none;
+    }
+    
+    .next-page{
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
 @import 'header';
 @import 'hero';
 @import 'reorganization';
@@ -115,3 +177,16 @@ ul {
 @import 'directors';
 @import 'object-2';
 @import 'history';
+@import 'main-hero';
+@import 'main-technologies';
+@import 'main-projects';
+@import 'main-contact';
+@import 'press-center-news';
+@import 'press-center-photo';
+@import 'press-center-video';
+@import 'press-center-glossary';
+@import 'press-center-mass';
+@import 'activity';
+@import 'object';
+@import 'one-news';
+@import 'map';

@@ -1,6 +1,6 @@
 let openBtn = document.querySelectorAll('.open-history');
 let closeBtn = document.querySelectorAll('.history-hidden');
-let fullHistory = document.querySelectorAll('.history__full');
+let fullHistory = document.querySelectorAll('.history__box');
 let hoverBox = document.querySelectorAll('.history__box-hover')
 
 //открытие полной истории

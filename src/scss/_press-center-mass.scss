@@ -1,0 +1,26 @@
+.press-center-mass {
+ .wrapper-1300 {
+  padding: 60px 0 160px 0;
+  h3 {
+   font-size: 40px;
+   margin: 0;
+   color: rgba(0, 74, 140, 1);
+  }
+  ul{
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   a:first-child{
+    font-weight: 700;
+   }
+   a{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 15px;
+    color: rgba(74, 74, 73, 1);
+    font-size: 18px;
+   }
+  }
+ }
+}

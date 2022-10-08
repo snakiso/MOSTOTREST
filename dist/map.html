@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221008141503" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221008141503" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221008141503">
+    <title>Объкты</title>
+</head>
+
+<body>
+ <header  class="header">
+    <div class="header__wrapper">
+      <div class="header__top">
+        <div class="header__logo">
+            <img src='img/logo.svg' alt="">
+        </div>
+        <div class="right-block">
+            <div class="seaching-field">
+                <input class="header__seach" type="text" placeholder="Поиск">
+                <button class="seach-btn">
+                    <img src="img/search-loupe.svg" alt="">
+                </button>
+            </div>
+            <a href="#"><button class="header__button">Отправить заявку</button></a>
+            <button class="change-lang mini-btn">EN</button>
+            <a href="#" class="mini-btn">
+                <img src="img/youtube.svg" alt="">
+            </a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <ul class="header__nav">
+            <p>О компании</p>
+            <li class="nav-item"><a href="#">Совет директоров</a></li>
+            <li class="nav-item"><a href="#">Менеджмент</a></li>
+            <li class="nav-item"><a href="#">История</a></li>
+            <li class="nav-item"><a href="#">Социальная ответственность</a></li>
+        </ul>
+        <ul class="header__nav">
+            <p>Деятельность</p>
+            <li class="nav-item"><a href="#">Построенные объекты</a></li>
+            <li class="nav-item"><a href="#">Строящиеся объекты</a></li>
+            <li class="nav-item"><a href="#">Технологии</a></li>
+            <li class="nav-item"><a href="#">Свидетельства</a></li>
+            <li class="nav-item"><a href="#">Сертифекаты</a></li>
+        </ul>
+        <ul class="header__nav">
+            <p>Инвесторам</p>
+            <li class="nav-item"><a href="#">Котировки</a></li>
+            <li class="nav-item"><a href="#">Отчеты</a></li>
+            <li class="nav-item"><a href="#">Раскрытие информации</a></li>
+        </ul>
+        <ul class="header__nav">
+            <p>Пресс-центр</p>
+            <li class="nav-item"><a href="#">Фотоархив</a></li>
+            <li class="nav-item"><a href="#">Видео с объективов</a></li>
+            <li class="nav-item"><a href="#">Глоссарий</a></li>
+        </ul>
+        <ul class="header__nav">
+            <p>Контакты</p>
+            <li class="nav-item"><a href="#">Адрес</a></li>
+            <li class="nav-item"><a href="#">Телефон</a></li>
+            <li class="nav-item"><a href="#">Второй телефон</a></li>
+            <li class="nav-item"><a href="#">И еще что то </a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/header.js?_v=20221008141503"></script>
+</header>
+ <main>
+  <section class="objects-hero">
+ <div class="wrapper-1300">
+  <h2>Наши объекты</h2>
+  <div class="buttons-block">
+   <div class="map-button objects-done">
+    <p>Построенные объекты</p>
+   </div>
+   <div class="map-button objects-process">
+    <p>Строящиеся объекты</p>
+   </div>
+  </div>
+ </div>
+</section>
+  <section class="build-map">
+ <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221008141503" type="text/javascript"></script>
+ <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20221008141503" type="text/javascript"></script>
+ <script>
+  let pathToJson = './files/builds-done.json'
+  let objectsDone = document.querySelector('.objects-done');
+  let objectsProcess = document.querySelector('.objects-process');
+  objectsDone.addEventListener('click', () => {
+   pathToJson = './files/builds-done.json';
+   myMap.destroy();
+   ymaps.ready(init);
+  })
+  objectsProcess.addEventListener('click', () => {
+   pathToJson = './files/builds-process.json';
+    myMap.destroy();
+    ymaps.ready(init);
+  })
+  var myMap;
+  ymaps.ready(init);
+  function init() {
+   myMap = new ymaps.Map('map', {
+    center: [47.965267, 80.436241],
+    zoom: 4,
+    controls: ['zoomControl',]
+   }, {
+    // searchControlProvider: 'yandex#search'
+   }),
+    objectManager = new ymaps.ObjectManager({
+     // Чтобы метки начали кластеризоваться, выставляем опцию.
+     clusterize: true,
+     // ObjectManager принимает те же опции, что и кластеризатор.
+     gridSize: 30,
+     clusterDisableClickZoom: false,
+    });
+
+   // Чтобы задать опции одиночным объектам и кластерам,
+   // обратимся к дочерним коллекциям ObjectManager.
+   objectManager.objects.options.set('preset', 'islands#darkBlueCircleDotIcon');
+   objectManager.clusters.options.set('preset', 'islands#darkBlueCircleDotIcon');
+   myMap.geoObjects.add(objectManager);
+   myMap.behaviors
+   .disable(['rightMouseButtonMagnifier', "scrollZoom"])
+   $.ajax({
+    url: pathToJson
+   }).done(function (data) {
+    objectManager.add(data);
+   });
+  }        
+ </script>
+ <div id="map"></div>
+</section>
+  <section class="all-objects">
+ <div class="wrapper-1300">
+  <div class="objects-block">
+   <a href="#" class="objects-box">
+    <div class="inner-box">
+     <div class="objects-photo">
+      <img src="img/all-objects/object-1.png" alt="">
+      <div class="objects-link"><img src="img/all-objects/arrow.svg" alt=""></div>
+     </div>
+     <p>Участок автомобильной дороги М-4 «Дон» (км 633 — км 715) в обход с.Лосево и г.Павловска в Воронежской области
+      (2020г.)</p>
+    </div>
+   </a>
+   <a href="#" class="objects-box">
+    <div class="inner-box">
+     <div class="objects-photo">
+      <img src="img/all-objects/object-2.png" alt="">
+      <div class="objects-link"><img src="img/all-objects/arrow.svg" alt=""></div>
+     </div>
+     <p>Мост в московский парк развлечений «Остров Мечты» (2019г.)</p>
+    </div>
+   </a>
+   <a href="#" class="objects-box">
+    <div class="inner-box">
+     <div class="objects-photo">
+      <img src="img/all-objects/object-3.png" alt="">
+      <div class="objects-link"><img src="img/all-objects/arrow.svg" alt=""></div>
+     </div>
+     <p>Развязка на пересечении МКАД с ул.Генерала Дорохова (2019г.)</p>
+    </div>
+   </a>
+   <a href="#" class="objects-box">
+    <div class="inner-box">
+     <div class="objects-photo">
+      <img src="img/all-objects/object-4.png" alt="">
+      <div class="objects-link"><img src="img/all-objects/arrow.svg" alt=""></div>
+     </div>
+     <p>Путепровод в район Чистые Пруды в Кирове (2019г.)</p>
+    </div>
+   </a>
+   <a href="#" class="objects-box">
+    <div class="inner-box">
+     <div class="objects-photo">
+      <img src="img/all-objects/object-5.png" alt="">
+      <div class="objects-link"><img src="img/all-objects/arrow.svg" alt=""></div>
+     </div>
+     <p>Участок Сокольнической линии московского метрополитена от станции «Саларьево» до станции «Коммунарка» (2019г.)</p>
+    </div>
+   </a>
+   <a href="#" class="objects-box">
+    <div class="inner-box">
+     <div class="objects-photo">
+      <img src="img/all-objects/object-6.png" alt="">
+      <div class="objects-link"><img src="img/all-objects/arrow.svg" alt=""></div>
+     </div>
+     <p>Участок скоростной автомобильной дороги М-11 «Москва — Санкт-Петербург» (км 97 — км 149) в Московской и Тверской
+     областях (2019г.)</p>
+    </div>
+   </a>
+  </div>
+  <div class="pages-block">
+   <button class="prev-page"></button>
+   <button class="change-page active">1</button>
+   <button class="change-page">2</button>
+   <button class="change-page">3</button>
+   <button class="change-page">...</button>
+   <button class="next-page"></button>
+  </div>
+ </div>
+</section>
+ </main>
+ <footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__top">
+            <div class="footer__left-block">
+                <div class="footer__logo">
+                    <img src="img/footer-logo.svg" alt="">
+                </div>
+                <p>Мы в соцсетях</p>
+                <div class="footer__social">
+                    <a href="#" class="mini-btn">
+                        <img src="img/footer-youtube.svg" alt="">
+                    </a>
+                    <a href="#" class="mini-btn">
+                        <img src="img/footer-vk.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right-block">
+                <ul class="footer__nav">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Деятельность</a></li>
+                    <li><a href="#">Инвесторам</a></li>
+                    <li><a href="#">Пресс-центр</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class='footer__link'>Карта сайта</a>
+                <div class="footer__rules">
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    <a href="#" class="footer__link">Правила использования сайта </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="left-block">
+                <button class="mini-btn">
+                    EN
+                </button>
+                <a href="#">Версия для печати</a>
+            </div>
+            <div class="right-block">
+                <span>© 2010-2022 ПАО «Мостотрест»</span>
+                <p>Создание сайта - <a href="#">projectroom</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+</body>
+<script src="./js/swiper.js?_v=20221008141503"></script>
+<script src="./js/swiperCode.js?_v=20221008141503"></script>
+
+</html>

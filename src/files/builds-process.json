@@ -1,0 +1,59 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": 0,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     55.831903,
+     39.411961
+    ]
+   },
+   "properties": {
+    "balloonContentHeader": "<span> 2019 год </span>",
+    "balloonContentBody": "<h5>Какой то мост</h5><p>Построенный где то там (подставьте свой город)</p><div><img src='./img/swiper-project-2.png'></div>",
+    "balloonContentFooter": "<a href='#'> Подробнее </a>",
+    "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
+    "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 1,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.763338,
+     41.565412
+    ]
+   },
+   "properties": {
+    "balloonContentHeader": "<span> 2020 год </span>",
+    "balloonContentBody": "<h5>Какой то мост</h5><p>Построенный где то там (подставьте свой город)</p><div><img src='./img/swiper-project-1.png'></div>",
+    "balloonContentFooter": "<a href='#'> Подробнее </a>",
+    "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
+    "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 2,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     43.763338,
+     47.565466
+    ]
+   },
+   "properties": {
+    "balloonContentHeader": "<span> 2021 год </span>",
+    "balloonContentBody": "<h5>Какой то мост</h5><p>Построенный где то там (подставьте свой город)</p><div><img src='./img/swiper-project-3.png'></div>",
+    "balloonContentFooter": "<a href='#'> Подробнее </a>",
+    "clusterCaption": "<strong><s>Еще</s> одна</strong> метка",
+    "hintContent": "<strong>Текст  <s>подсказки</s></strong>"
+   }
+  }
+ ]
+}

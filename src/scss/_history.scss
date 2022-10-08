@@ -36,9 +36,16 @@
   z-index: 5;
  }
 
+ &__box.open{
+  max-height: 10000px;
+  transition: all 1s;
+ }
+
  &__box {
   position: relative;
-  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  transition: all 1s;
  }
 
  &__inner-box {
@@ -69,7 +76,21 @@
  }
 
  &__info {
+  span::before {
+   position: absolute;
+   content: '';
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: rgba(32, 154, 215, 1);
+   top: 50%;
+   transform: translateY(-50%);
+   left: -94px;
+   z-index: 5;
+  }
+
   span {
+   position: relative;
    display: block;
    margin-top: 15px;
    font-size: 28px;
@@ -80,6 +101,8 @@
   h3 {
    color: rgba(0, 74, 140, 1);
    font-size: 40px;
+   margin-top: 15px;
+   line-height: 90%;
   }
 
   max-width: 480px;
@@ -98,6 +121,7 @@
   width: 100%;
   background: rgba(0, 74, 140, 1);
   transition: all .5s;
+  overflow: hidden;
 
   .open-history {
    position: absolute;
@@ -112,8 +136,8 @@
   }
  }
 
- &__box-hover.hidden{
-    display: none;
+ &__box-hover.hidden {
+  display: none;
  }
 
  &__full::before {
@@ -128,6 +152,7 @@
 
  &__full.open {
   max-height: 10000px;
+  transform-origin: top;
  }
 
  &__full {
@@ -138,7 +163,8 @@
   background-color: rgba(0, 74, 140, 1);
   transition: all 3s;
   overflow: hidden;
-  max-height: 0px;
+  margin-top: 100px;
+  // max-height: 0px;
 
   .wrapper-1300 {
    padding: 160px 0;
@@ -169,7 +195,21 @@
     margin-right: 80px;
     max-width: 480px;
 
+    span::before {
+     position: absolute;
+     content: '';
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background: rgba(32, 154, 215, 1);
+     top: 50%;
+     transform: translateY(-50%);
+     left: -94px;
+     z-index: 5;
+    }
+
     span {
+     position: relative;
      display: block;
      margin-bottom: 25px;
      color: rgba(165, 165, 165, 1);
