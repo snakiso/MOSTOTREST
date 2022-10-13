@@ -3447,6 +3447,14 @@ ul {
   .projects-slider .projects-years {
     left: 580px !important;
   }
+
+  .contacts-us .right-bg {
+    display: none;
+  }
+
+  .contacts-us .left-bg {
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -3856,14 +3864,6 @@ ul {
 
   .projects-slider .projects-years {
     left: 380px !important;
-  }
-
-  .contacts-us .right-bg {
-    display: none;
-  }
-
-  .contacts-us .left-bg {
-    flex-basis: 100%;
   }
 
   .contacts-us .wrapper-1300 {
