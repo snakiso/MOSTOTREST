@@ -6,12 +6,14 @@
 
 <body>
     @@include('html/header.html',{})
+    @@include('html/mobile-nav.html',{})
     <main>
         @@include('html/object/hero.html')
         @@include('html/object/slider.html')
         @@include('html/object/main-content.html')
     </main>
     @@include('html/footer.html',{})
+    <script src="./js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiperCode.js"></script>
 </body>

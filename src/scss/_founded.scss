@@ -110,6 +110,7 @@
 
         .achievements-box:nth-child(2) {
             background-image: url(../img/achievements-bg.png);
+            background-position: right;
             background-repeat: no-repeat;
         }
 
@@ -129,5 +130,89 @@
         width: 100%;
         top: 50%;
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .founded {
+        &__title {
+            flex-direction: column;
+            padding: 0 25px;
+        }
+
+        &__year {
+            padding-bottom: 30px;
+        }
+
+        &__rewards {
+            padding: 0 25px;
+        }
+
+        &__achievements {
+            padding: 0 25px;
+        }
+
+        &__achievements:before {
+            top: -8px;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .founded {
+        &__year {
+            font-size: 28px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__rewards {
+            .rewards-block {
+                flex-direction: column;
+                row-gap: 10px;
+
+                .rewards-box {
+                    height: 100px;
+                    flex: none;
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    img {
+                        width: 56px;
+                        height: 65px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+
+        &__achievements {
+            padding: 0;
+
+            .achievements-container {
+                flex-direction: column;
+            }
+
+            .achievements-box {
+                h2 {
+                    font-size: 40px;
+                    margin-top: 40px;
+                }
+                p{
+                    margin: 20px 0 40px 0;
+                    padding: 0 25px;
+                }
+            }
+        }
+
+        &__achievements:before {
+            top: -8px;
+            left: 0;
+        }
     }
 }

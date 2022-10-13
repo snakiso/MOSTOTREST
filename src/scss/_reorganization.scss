@@ -25,7 +25,7 @@
     content: '';
     top: -8px;
     left: 0;
-    width: 980px;
+    width: 50%;
     height: 8px;
     background: #E5B062;
 }
@@ -34,4 +34,34 @@
     top: auto;
     right: 0;
     left: auto;
+}
+
+@media screen and (max-width: 1300px){
+    .reorganization{
+        &__wrapper{
+            padding: 60px 25px;
+            h5{
+                font-size: 30px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .reorganization {
+        background-color: rgba(0, 74, 140, 1);
+        background-image: none;
+        &__wrapper {
+            h5 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
 }

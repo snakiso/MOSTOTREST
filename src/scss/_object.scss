@@ -67,3 +67,14 @@
   border: 4px solid #E5B062;
  }
 }
+
+@media screen and (max-width: 1080px){
+ .object {
+   .wrapper-1300 {
+    padding: 0;
+   }
+  }
+  .object-slider{
+   width: 100%;
+  }
+}

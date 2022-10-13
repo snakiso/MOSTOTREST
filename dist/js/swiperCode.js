@@ -56,6 +56,9 @@ var swiper = new Swiper('.railway-slider', {
     1920: {
       slidesPerView: 'auto',
     },
+    1200: {
+      slidesPerView: 1,
+    }
   }
 });
 
@@ -113,5 +116,13 @@ var swiper = new Swiper(".projects-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    1920: {
+      slidesPerView: 'auto',
+    },
+    768: {
+      spaceBetween: 20,
+    }
   }
 });

@@ -1,0 +1,134 @@
+.mobile-nav {
+ background: rgba(0, 74, 140, 1);
+ position: fixed;
+ z-index: 9999;
+ width: 100vw;
+ right: -110%;
+ top: 0;
+ transition: all .5s;
+
+ .inner-box {
+  padding: 0 25px;
+ }
+
+ .mobile-nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+
+  img {
+   max-width: 126px;
+   height: 18px;
+  }
+
+  .close-nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 38px;
+   height: 38px;
+   border: 1px solid white;
+   border-radius: 50%;
+   background: none;
+  }
+ }
+
+ .mobile-nav-list.open {
+  max-height: 1000px;
+
+  p:before {
+   transform: rotate(45deg);
+  }
+ }
+
+ .mobile-nav-list {
+  transition: all .5s;
+  max-height: 35px;
+  overflow: hidden;
+
+  p:before {
+   content: '';
+   position: absolute;
+   border-bottom: 1px solid white;
+   border-right: 1px solid white;
+   width: 6px;
+   height: 6px;
+   transform: rotate(-45deg);
+   right: 6px;
+   top: 6px;
+   transition: all .5s;
+  }
+
+  p {
+   position: relative;
+   margin: 0;
+   color: white;
+   padding-bottom: 15px;
+   border-bottom: 1px solid white;
+  }
+
+  li {
+   a {
+    color: rgba(165, 165, 165, 1);
+    border-bottom: 1px solid rgba(165, 165, 165, 1);
+    padding: 10px 0;
+    width: 100%;
+   }
+  }
+ }
+
+ .seaching-field {
+  margin: 20px 0 30px 0;
+  display: flex;
+  width: 100%;
+  height: 42px;
+  border: 0.5px solid white;
+  border-radius: 100px;
+  justify-content: space-between;
+
+  input {
+   border: none;
+   background: none;
+   outline: none;
+   color: white;
+   padding-left: 10px;
+   width: 90%;
+  }
+
+  .seach-btn {
+   border: none;
+   background: none;
+  }
+ }
+
+ .mobile-nav-button {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  background: rgba(32, 154, 215, 1);
+  color: white;
+  border-radius: 100px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .mobile-nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  .mini-btn {
+   color: white;
+  }
+ }
+}
+
+.mobile-nav.open{
+ right: 0;
+}

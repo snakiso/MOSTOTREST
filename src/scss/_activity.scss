@@ -206,23 +206,24 @@
             left: 45%;
           }
 
-          .swiper-button-next:before{
+          .swiper-button-next:before {
             transform: rotate(-135deg);
             right: 45%;
           }
         }
-        .buttons-block.reverse{
+
+        .buttons-block.reverse {
           .swiper-button-prev:before {
-              transform: rotate(-135deg);
-              right: 45%;
-              left: auto;
-            }
-          
-            .swiper-button-next:before {
-              transform: rotate(45deg);
-              left: 45%;
-              right: auto;
-            }
+            transform: rotate(-135deg);
+            right: 45%;
+            left: auto;
+          }
+
+          .swiper-button-next:before {
+            transform: rotate(45deg);
+            left: 45%;
+            right: auto;
+          }
         }
       }
 
@@ -231,7 +232,6 @@
       }
 
       .swiper-slide {
-        width: 100%;
         display: flex;
         flex-direction: column;
       }
@@ -252,5 +252,82 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .activity-hero {
+    .wrapper-1300 {
+      h2 {
+        font-size: 34px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .activity {
+    .wrapper-1300 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 80px 25px 0 25px;
+
+      h3 {
+        font-size: 28px;
+      }
+    }
+
+    .activity__block {
+      flex-direction: column;
+      row-gap: 60px;
+
+      .inner-box {
+        padding: 60px 25px;
+
+        ul {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .activity-examples {
+    .examples-container {
+      margin-top: 80px;
+
+      .wrapper-1300 {
+        h3 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .slider-container .railway-slider .buttons-block {
+        padding: 0 25px;
+      }
+    }
+  }
+
+  .activity-examples .examples-container .wrapper-1300 .slider-title {
+    display: block;
+  }
+
+  .activity-examples .examples-container .slider-container .slide-name p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .activity-examples .examples-container .slider-container .railway-slider .buttons-block {
+    position: absolute;
+    bottom: -50px;
+    top: auto;
+    left: 0;
   }
 }

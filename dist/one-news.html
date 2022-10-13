@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221008153641" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221013085356" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221008153641" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221008153641">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221013085356" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221013085356">
     <title>Пресс-центр</title>
 </head>
 
@@ -35,6 +35,9 @@
                     <img src="img/youtube.svg" alt="">
                 </a>
             </div>
+            <button class="nav-open">
+                <img src="img/burger-menu.svg" alt="">
+            </button>
           </div>
           <div class="header__bottom">
             <ul class="header__nav">
@@ -73,9 +76,61 @@
             </ul>
           </div>
         </div>
-        <script src="./js/header.js?_v=20221008153641"></script>
     </header>
 </div>
+  <nav class="mobile-nav">
+ <div class="inner-box">
+ <div class="mobile-nav-top">
+  <img src="img/logo.svg" alt="">
+  <button class="close-nav"><img src="img/close-nav.svg" alt=""></button>
+ </div>
+  <div class="seaching-field">
+   <input class="header__seach" type="text" placeholder="Поиск">
+   <button class="seach-btn">
+    <img src="img/search-loupe.svg" alt="">
+   </button>
+  </div>
+  <ul class="mobile-nav-list">
+   <p>О компании</p>
+   <li class="nav-item"><a href="#">Совет директоров</a></li>
+   <li class="nav-item"><a href="#">Менеджмент</a></li>
+   <li class="nav-item"><a href="#">История</a></li>
+   <li class="nav-item"><a href="#">Социальная ответственность</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Деятельность</p>
+   <li class="nav-item"><a href="#">Построенные объекты</a></li>
+   <li class="nav-item"><a href="#">Строящиеся объекты</a></li>
+   <li class="nav-item"><a href="#">Технологии</a></li>
+   <li class="nav-item"><a href="#">Свидетельства</a></li>
+   <li class="nav-item"><a href="#">Сертифекаты</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Инвесторам</p>
+   <li class="nav-item"><a href="#">Котировки</a></li>
+   <li class="nav-item"><a href="#">Отчеты</a></li>
+   <li class="nav-item"><a href="#">Раскрытие информации</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Пресс-центр</p>
+   <li class="nav-item"><a href="#">Фотоархив</a></li>
+   <li class="nav-item"><a href="#">Видео с объективов</a></li>
+   <li class="nav-item"><a href="#">Глоссарий</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Контакты</p>
+   <li class="nav-item"><a href="#">Адрес</a></li>
+   <li class="nav-item"><a href="#">Телефон</a></li>
+   <li class="nav-item"><a href="#">Второй телефон</a></li>
+   <li class="nav-item"><a href="#">И еще что то </a></li>
+  </ul>
+  <a href="#" class="mobile-nav-button">Отправить заявку</a>
+  <div class="mobile-nav-bottom">
+   <a href="#" class="mini-btn"><img src="img/youtube.svg" alt=""></a>
+   <button class="mini-btn">EN</button>
+  </div>
+  </div>
+</nav>
   <main>
     <section class="press-center-navigation">
  <div class="wrapper-1300 one-news">
@@ -187,42 +242,38 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-        <div class="footer__top">
-            <div class="footer__left-block">
-                <div class="footer__logo">
-                    <img src="img/footer-logo.svg" alt="">
-                </div>
-                <p>Мы в соцсетях</p>
-                <div class="footer__social">
-                    <a href="#" class="mini-btn">
-                        <img src="img/footer-youtube.svg" alt="">
-                    </a>
-                    <a href="#" class="mini-btn">
-                        <img src="img/footer-vk.svg" alt="">
-                    </a>
-                </div>
+        <div class="footer__left-block">
+            <div class="footer__logo">
+                <img src="img/footer-logo.svg" alt="">
             </div>
-            <div class="footer__right-block">
-                <ul class="footer__nav">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Деятельность</a></li>
-                    <li><a href="#">Инвесторам</a></li>
-                    <li><a href="#">Пресс-центр</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <a href="#" class='footer__link'>Карта сайта</a>
-                <div class="footer__rules">
-                    <a href="#" class="footer__link">Политика конфиденциальности</a>
-                    <a href="#" class="footer__link">Правила использования сайта </a>
-                </div>
+            <p>Мы в соцсетях</p>
+            <div class="footer__social">
+                <a href="#" class="mini-btn">
+                    <img src="img/footer-youtube.svg" alt="">
+                </a>
+                <a href="#" class="mini-btn">
+                    <img src="img/footer-vk.svg" alt="">
+                </a>
             </div>
-        </div>
-        <div class="footer__bottom">
             <div class="left-block">
                 <button class="mini-btn">
                     EN
                 </button>
                 <a href="#">Версия для печати</a>
+            </div>
+        </div>
+        <div class="footer__right-block">
+            <ul class="footer__nav">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Деятельность</a></li>
+                <li><a href="#">Инвесторам</a></li>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class='footer__link'>Карта сайта</a>
+            <div class="footer__rules">
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <a href="#" class="footer__link">Правила использования сайта </a>
             </div>
             <div class="right-block">
                 <span>© 2010-2022 ПАО «Мостотрест»</span>
@@ -231,8 +282,9 @@
         </div>
     </div>
 </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221008153641"></script>
-  <script src="./js/swiperCode.js?_v=20221008153641"></script>
-  <script src="./js/video.js?_v=20221008153641"></script>
+  <script src="./js/header.js?_v=20221013085356"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js?_v=20221013085356"></script>
+  <script src="./js/swiperCode.js?_v=20221013085356"></script>
+  <script src="./js/video.js?_v=20221013085356"></script>
 </body>
 </html>

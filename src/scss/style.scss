@@ -166,7 +166,17 @@ ul {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .wrapper-1300{
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@import 'subscribe';
 @import 'header';
+@import 'mobile-nav';
 @import 'hero';
 @import 'reorganization';
 @import 'founded';
@@ -181,6 +191,7 @@ ul {
 @import 'main-technologies';
 @import 'main-projects';
 @import 'main-contact';
+@import 'main-press';
 @import 'press-center-news';
 @import 'press-center-photo';
 @import 'press-center-video';

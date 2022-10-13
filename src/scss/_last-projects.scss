@@ -84,3 +84,18 @@
         }
     }
 }
+@media screen and (max-width: 1300px){
+    .last-projects{
+        .wrapper-1300{
+            h3{
+                font-size: 28px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .buttons-block{
+            padding: 40px 25px !important;
+        }
+    }
+}

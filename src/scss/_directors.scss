@@ -1,4 +1,4 @@
-.directors-title::before{
+.directors-title::before {
  position: absolute;
  content: '';
  width: 53%;
@@ -6,34 +6,40 @@
  background: rgba(229, 176, 98, 1);
  top: -20px;
 }
-.directors-title{
+
+.directors-title {
  position: relative;
  margin-top: 160px;
- h1{
+
+ h1 {
   font-size: 78px;
   color: rgba(0, 74, 140, 1);
  }
- p{
+
+ p {
   font-size: 20px;
   max-width: 960px;
  }
 }
 
-.directors-block{
- .wrapper-1300{
+.directors-block {
+ .wrapper-1300 {
   margin: 160px auto;
-  h6{
+
+  h6 {
    color: rgba(0, 74, 140, 1);
    font-size: 28px;
    border-bottom: 1px solid rgba(228, 228, 228, 1);
    padding-bottom: 30px;
   }
-  .directors-container{
+
+  .directors-container {
    display: flex;
    flex-wrap: wrap;
    column-gap: 30px;
    row-gap: 30px;
-   .directors-box{
+
+   .directors-box {
     background-image: url(../img/directors/decor.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -43,17 +49,20 @@
     column-gap: 30px;
     background-color: rgba(0, 74, 140, 1);
     color: white;
-    .director-info{
+
+    .director-info {
      width: 100%;
     }
-    p{
+
+    p {
      position: relative;
      font-size: 14px;
      margin-top: 40px;
      border-bottom: 1px solid white;
      padding-bottom: 10px;
     }
-    p::before{
+
+    p::before {
      position: absolute;
      content: '';
      background-color: #E5B062;
@@ -62,13 +71,15 @@
      height: 5px;
      width: 30px;
     }
-    h3{
+
+    h3 {
      font-size: 20px;
      margin-top: 50px;
      max-width: 260px;
     }
-    a{
-     color:rgba(32, 154, 215, 1);
+
+    a {
+     color: rgba(32, 154, 215, 1);
      text-decoration: underline;
      margin-top: 40px;
     }
@@ -77,7 +88,8 @@
  }
 }
 
-.directors-text::before,.directors-text::after{
+.directors-text::before,
+.directors-text::after {
  position: absolute;
  content: '';
  height: 8px;
@@ -86,36 +98,43 @@
  top: -8px;
  left: 0;
 }
-.directors-text::after{
+
+.directors-text::after {
  top: auto;
  left: auto;
  bottom: -8px;
  right: 0;
 }
-.directors-text{
+
+.directors-text {
  position: relative;
  background-color: rgba(0, 74, 140, 1);
- .wrapper-1300{
+
+ .wrapper-1300 {
   padding: 160px 0;
   color: white;
-  h5{
+
+  h5 {
    font-size: 38px;
    max-width: 970px;
   }
-  p{
+
+  p {
    font-size: 20px;
   }
  }
 }
 
-.directors-meetings{
- .wrapper-1300{
+.directors-meetings {
+ .wrapper-1300 {
   padding: 160px 0;
-  h5{
+
+  h5 {
    font-size: 38px;
    color: rgba(0, 74, 140, 1);
   }
-  p{
+
+  p {
    color: rgba(29, 29, 27, 1);
    font-size: 20px;
    border-bottom: 2px solid rgba(228, 228, 228, 1);
@@ -124,44 +143,139 @@
  }
 }
 
-.one-director::before{
+.one-director::before {
  position: absolute;
  content: '';
  width: 55%;
  height: 2px;
  background: #E5B062;
- top:0;
+ top: 0;
  right: 0;
 }
-.one-director{
+
+.one-director {
  position: relative;
- .wrapper-1300{
+
+ .wrapper-1300 {
   display: flex;
   column-gap: 30px;
   margin: 160px auto;
-  .director-biografy{
-   h5{
-    color:rgba(0, 74, 140, 1);
+
+  .director-biografy {
+   h5 {
+    color: rgba(0, 74, 140, 1);
     font-size: 38px;
     margin-bottom: 0;
    }
-   p{
+
+   p {
     font-size: 20px;
     font-weight: 700;
     color: rgba(29, 29, 27, 1);
    }
-   .education{
+
+   .education {
     margin-top: 120px;
    }
   }
-  .exp{
-   h6{
+
+  .exp {
+   h6 {
     color: rgba(0, 74, 140, 1);
     font-size: 28px;
     margin-bottom: 0;
    }
-   p{
+
+   p {
     font-weight: 400;
+   }
+  }
+ }
+}
+
+
+@media screen and (max-width: 1300px) {
+ .directors-title {
+  h1 {
+   font-size: 34px;
+  }
+
+  p {
+   font-size: 14px;
+  }
+ }
+
+ .directors-block {
+  .wrapper-1300 {
+   h6 {
+    font-size: 18px;
+   }
+  }
+ }
+
+ .directors-text .wrapper-1300 h5 {
+  font-size: 20px;
+  padding: 0 15px;
+ }
+
+ .directors-text .wrapper-1300 p {
+  font-size: 14px;
+  padding: 0 15px;
+ }
+
+ .directors-meetings .wrapper-1300 h5 {
+  font-size: 20px;
+  padding: 0 15px;
+ }
+
+ .directors-meetings .wrapper-1300 p {
+  font-size: 14px;
+  padding: 30px 15px;
+  padding-top: 0;
+ }
+
+ .one-director::before {
+  display: none;
+ }
+
+ .one-director .wrapper-1300 {
+  flex-direction: column;
+  .director-photo{
+   img{
+    width: 100%;
+   }
+  }
+  .director-biografy {
+   h5 {
+    font-size: 20px;
+   }
+
+   p {
+    font-size: 16px;
+   }
+
+   .education {
+    margin: auto;
+   }
+  }
+  .exp{
+   h6{
+    font-size: 20px;
+   }
+  }
+ }
+}
+
+@media screen and (max-width: 900px) {
+ .directors-block .wrapper-1300 .directors-container {
+  justify-content: center;
+
+  .directors-box {
+   flex-direction: column;
+   background-image: none;
+
+   .director-info {
+    padding: 16px 16px 30px;
    }
   }
  }

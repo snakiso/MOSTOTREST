@@ -23,3 +23,29 @@
         }
     }
 }
+
+@media screen and (max-width: 1300px){
+    .hero{
+        .wrapper-1300{
+            h1{
+                font-size: 50px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .hero{
+        .wrapper-1300{
+            h1{
+                font-size: 34px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

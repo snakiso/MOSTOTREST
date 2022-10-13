@@ -81,9 +81,10 @@
    border: 2px solid white;
    border-radius: 50%;
   }
- 
-  .swiper-button-prev:hover, .swiper-button-next:hover{
-   background:rgb(255, 255, 255, 0.2);
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+   background: rgb(255, 255, 255, 0.2);
   }
 
   .swiper-button-prev::before,
@@ -106,6 +107,42 @@
    border-top: 1px solid white;
    border-right: 1px solid white;
    left: 45%;
+  }
+ }
+}
+
+@media screen and (max-width: 1300px) {
+ .main-hero {
+  .hero-slider {
+   .swiper-wrapper {
+    .swiper-slide {
+     .wrapper-1300 {
+      h1 {
+       font-size: 34px;
+      }
+
+      p {
+       font-size: 14px;
+      }
+     }
+    }
+   }
+
+   .buttons-block {
+    justify-content: space-between;
+    top: 50%;
+    bottom: auto;
+    width: 100%;
+    .swiper-button-next,
+    .swiper-button-prev {
+     border: none;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+     background: none;
+    }
+   }
   }
  }
 }

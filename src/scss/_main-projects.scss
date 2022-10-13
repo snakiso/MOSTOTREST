@@ -1,14 +1,18 @@
-.main-projects{
+.main-projects {
  margin-top: 160px;
- .wrapper-1300{
+ overflow: hidden;
+
+ .wrapper-1300 {
   display: flex;
   justify-content: space-between;
-  h2{
+
+  h2 {
    color: rgba(0, 74, 140, 1);
    font-size: 62px;
    margin: 0;
   }
-  a{
+
+  a {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -21,37 +25,119 @@
    background: rgba(0, 74, 140, 1);
   }
  }
- .projects-slider{
-  padding-top: 150px;
-  .swiper-wrapper{
+
+ .projects-slider {
+  margin-top: 150px;
+  position: relative;
+
+  .projects-years {
+   display: flex;
+   position: absolute;
+   top: -75px;
+   left: 980px;
+   z-index: 5;
+   transition: all .2s;
+
+   .project-2018,
+   .project-2019,
+   .project-2020 {
+    font-size: 112px;
+    color: rgba(0, 0, 0, 0);
+    font-weight: 500;
+    -webkit-text-stroke: 1.1px #000000;
+    transition: all .5s;
+   }
+
+   .project-2018.active,
+   .project-2019.active,
+   .project-2020.active {
+    color: rgba(229, 176, 98, 1);
+    -webkit-text-stroke: 0px;
+   }
+  }
+
+  .swiper-wrapper {
    display: flex;
   }
-  .swiper-slide{
+
+  .swiper-slide {
    transition: all .5s;
    color: rgba(74, 74, 73, 1);
-   img{
+
+   img {
     filter: grayscale(100%);
     transition: all .5s;
    }
-   .project-info{
+
+   .project-info {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    p{
+
+    p {
      font-size: 18px;
      font-weight: 700;
      margin: 0;
      max-width: 285px;
     }
-    span{
+
+    span {
      font-weight: 700;
     }
    }
   }
-  .swiper-slide-active{
-   color:rgba(0, 74, 140, 1);
-   img{
+
+  .swiper-slide-active {
+   color: rgba(0, 74, 140, 1);
+
+   img {
     filter: grayscale(0%);
+   }
+  }
+ }
+}
+
+@media screen and (max-width: 2500px) {
+ .projects-slider {
+  .projects-years {
+   left: 960px !important;
+  }
+ }
+}
+
+@media screen and (max-width: 1920px) {
+ .projects-slider {
+  .projects-years {
+   left: 680px !important;
+  }
+ }
+}
+
+@media screen and (max-width: 1600px) {
+ .projects-slider {
+  .projects-years {
+   left: 580px !important;
+  }
+ }
+}
+
+@media screen and (max-width: 1300px) {
+ .projects-slider {
+  .projects-years {
+   left: 380px !important;
+  }
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .projects-slider {
+  .projects-years {
+   left: 180px !important;
+  }
+  .swiper-slide{
+   width: 270px;
+   img{
+    width: inherit;
    }
   }
  }

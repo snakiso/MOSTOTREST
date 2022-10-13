@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221008153641" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221013085356" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221008153641" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221008153641">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221013085356" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221013085356">
     <title>Контакты</title>
 </head>
 
@@ -35,6 +35,9 @@
                     <img src="img/youtube.svg" alt="">
                 </a>
             </div>
+            <button class="nav-open">
+                <img src="img/burger-menu.svg" alt="">
+            </button>
           </div>
           <div class="header__bottom">
             <ul class="header__nav">
@@ -73,14 +76,78 @@
             </ul>
           </div>
         </div>
-        <script src="./js/header.js?_v=20221008153641"></script>
     </header>
 </div>
+ <nav class="mobile-nav">
+ <div class="inner-box">
+ <div class="mobile-nav-top">
+  <img src="img/logo.svg" alt="">
+  <button class="close-nav"><img src="img/close-nav.svg" alt=""></button>
+ </div>
+  <div class="seaching-field">
+   <input class="header__seach" type="text" placeholder="Поиск">
+   <button class="seach-btn">
+    <img src="img/search-loupe.svg" alt="">
+   </button>
+  </div>
+  <ul class="mobile-nav-list">
+   <p>О компании</p>
+   <li class="nav-item"><a href="#">Совет директоров</a></li>
+   <li class="nav-item"><a href="#">Менеджмент</a></li>
+   <li class="nav-item"><a href="#">История</a></li>
+   <li class="nav-item"><a href="#">Социальная ответственность</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Деятельность</p>
+   <li class="nav-item"><a href="#">Построенные объекты</a></li>
+   <li class="nav-item"><a href="#">Строящиеся объекты</a></li>
+   <li class="nav-item"><a href="#">Технологии</a></li>
+   <li class="nav-item"><a href="#">Свидетельства</a></li>
+   <li class="nav-item"><a href="#">Сертифекаты</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Инвесторам</p>
+   <li class="nav-item"><a href="#">Котировки</a></li>
+   <li class="nav-item"><a href="#">Отчеты</a></li>
+   <li class="nav-item"><a href="#">Раскрытие информации</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Пресс-центр</p>
+   <li class="nav-item"><a href="#">Фотоархив</a></li>
+   <li class="nav-item"><a href="#">Видео с объективов</a></li>
+   <li class="nav-item"><a href="#">Глоссарий</a></li>
+  </ul>
+  <ul class="mobile-nav-list">
+   <p>Контакты</p>
+   <li class="nav-item"><a href="#">Адрес</a></li>
+   <li class="nav-item"><a href="#">Телефон</a></li>
+   <li class="nav-item"><a href="#">Второй телефон</a></li>
+   <li class="nav-item"><a href="#">И еще что то </a></li>
+  </ul>
+  <a href="#" class="mobile-nav-button">Отправить заявку</a>
+  <div class="mobile-nav-bottom">
+   <a href="#" class="mini-btn"><img src="img/youtube.svg" alt=""></a>
+   <button class="mini-btn">EN</button>
+  </div>
+  </div>
+</nav>
  <main>
   <section class="contacts">
   <div class="wrapper-1300">
+    <div class="contacts__title-mobile">
+      <h2>Контакты</h2>
+      <a href="https://yandex.by/maps/213/moscow/house/ulitsa_barklaya_6s5/Z04YcwdoS0cOQFtvfXtyeH5mYQ==/?ll=37.508230%2C55.739255&z=17.07"
+        class="contacts__link"><img src="img/contacts-map.svg" alt="">Россия, 121087, г. Москва, ул. Барклая, д. 6,
+        стр. 5</a>
+      <a href="mailto:mostro@mostro.ru" class="contacts__link"><img src="img/contacts-phone.svg"
+          alt="">mostro@mostro.ru</a>
+      <a href="tel:+74956697999" class="contacts__link"><img src="img/contacts-phone.svg" alt="">+7 (495)
+        669-79-99</a>
+      <a href="tel:+74956697711" class="contacts__link"><img src="img/contacts-printer.svg" alt="">+7 (495)
+        669-77-11</a>
+    </div>
     <div class="contacts__map">
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221008153641"
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221013085356"
         type="text/javascript"></script>
       <script>
         var myMap;
@@ -140,6 +207,18 @@
           <input type="checkbox" name="" id="">
           <p>Я согласен на обработку персональных данных и с <a href="#">политикой конфиденциальности</a></p>
         </div>
+        <div class="send-block">
+          <div class="captcha-block">
+            <div class="inner-box">
+              <div class="robot">
+                <input type="checkbox" name="" id="">
+                <p>Я не робот</p>
+              </div>
+              <img src="img/reCaptcha.png" alt="">
+            </div>
+          </div>
+          <button class="send-button">Отправить <img src="img/Send-message.svg" alt=""></button>
+        </div>
       </div>
     </div>
   </div>
@@ -147,42 +226,38 @@
  </main>
  <footer class="footer">
     <div class="footer__wrapper">
-        <div class="footer__top">
-            <div class="footer__left-block">
-                <div class="footer__logo">
-                    <img src="img/footer-logo.svg" alt="">
-                </div>
-                <p>Мы в соцсетях</p>
-                <div class="footer__social">
-                    <a href="#" class="mini-btn">
-                        <img src="img/footer-youtube.svg" alt="">
-                    </a>
-                    <a href="#" class="mini-btn">
-                        <img src="img/footer-vk.svg" alt="">
-                    </a>
-                </div>
+        <div class="footer__left-block">
+            <div class="footer__logo">
+                <img src="img/footer-logo.svg" alt="">
             </div>
-            <div class="footer__right-block">
-                <ul class="footer__nav">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Деятельность</a></li>
-                    <li><a href="#">Инвесторам</a></li>
-                    <li><a href="#">Пресс-центр</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <a href="#" class='footer__link'>Карта сайта</a>
-                <div class="footer__rules">
-                    <a href="#" class="footer__link">Политика конфиденциальности</a>
-                    <a href="#" class="footer__link">Правила использования сайта </a>
-                </div>
+            <p>Мы в соцсетях</p>
+            <div class="footer__social">
+                <a href="#" class="mini-btn">
+                    <img src="img/footer-youtube.svg" alt="">
+                </a>
+                <a href="#" class="mini-btn">
+                    <img src="img/footer-vk.svg" alt="">
+                </a>
             </div>
-        </div>
-        <div class="footer__bottom">
             <div class="left-block">
                 <button class="mini-btn">
                     EN
                 </button>
                 <a href="#">Версия для печати</a>
+            </div>
+        </div>
+        <div class="footer__right-block">
+            <ul class="footer__nav">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Деятельность</a></li>
+                <li><a href="#">Инвесторам</a></li>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class='footer__link'>Карта сайта</a>
+            <div class="footer__rules">
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <a href="#" class="footer__link">Правила использования сайта </a>
             </div>
             <div class="right-block">
                 <span>© 2010-2022 ПАО «Мостотрест»</span>
@@ -191,6 +266,7 @@
         </div>
     </div>
 </footer>
+ <script src="./js/header.js?_v=20221013085356"></script>
 </body>
 
 </html>

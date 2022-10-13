@@ -25,3 +25,26 @@
   }
  }
 }
+
+@media screen and (max-width: 1300px){
+ .press-center-glossary{
+  .wrapper-1300{
+   padding: 80px 25px 0 25px;
+   h3{
+    font-size: 28px;
+   }
+      .glossary-block{
+       ul{
+        li{
+         h4{
+          font-size: 14px;
+         }
+         p{
+          font-size: 12px;
+         }
+        }
+       }
+      }
+  }
+ }
+}

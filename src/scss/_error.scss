@@ -31,3 +31,28 @@
         }
     }
 }
+
+@media screen and (max-width: 1300px){
+    .error{
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .error {
+        min-height: 480px;
+        &__container{
+            h1{
+                font-size: 110px;
+            }
+            h5{
+                font-size: 28px;
+            }
+            p{
+                font-size: 14px;
+                margin-top: 20px;
+                padding: 0 25px;
+            }
+        }
+    }
+}

@@ -55,3 +55,23 @@
   }
  }
 }
+
+@media screen and (max-width: 1300px){
+ .contacts-us {
+  .right-bg{
+   display: none;
+  }
+  .left-bg{
+    flex-basis: 100%;
+  }
+  .wrapper-1300{
+   left: 0;
+   .contacts__send{
+    .checked-block{
+     justify-content: flex-start;
+     flex-wrap: wrap;
+    }
+   }
+  }
+ }
+}

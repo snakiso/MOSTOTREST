@@ -47,3 +47,25 @@
   }
  }
 }
+
+@media screen and (max-width: 1300px){
+ .press-center-video{
+  .wrapper-1300{
+   padding: 80px 25px;
+   h3{
+    font-size: 28px;
+   }
+   .video-preview{
+    img{
+     width: 100%;
+    }
+    .play-button{
+     img{
+     width: 24px;
+     height: 24px;
+     }
+    }
+   }
+  }
+ }
+}
