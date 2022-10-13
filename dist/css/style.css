@@ -430,6 +430,10 @@ ul {
   margin: 11px 0;
 }
 
+.header__bottom .header__nav .main-link:hover {
+  color: rgb(32, 154, 215);
+}
+
 .header__bottom .header__nav li {
   border-top: 1px solid rgba(165, 165, 165, 0.5);
   height: 42px;
