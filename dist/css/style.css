@@ -425,6 +425,11 @@ ul {
   transition: all 0.5s;
 }
 
+.header__bottom .header__nav .main-link {
+  color: white;
+  margin: 11px 0;
+}
+
 .header__bottom .header__nav li {
   border-top: 1px solid rgba(165, 165, 165, 0.5);
   height: 42px;

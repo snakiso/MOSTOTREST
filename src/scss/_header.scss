@@ -102,7 +102,11 @@
             border-top: 0.5px solid white;
             margin: 0;
             transition: all .5s;
-
+             
+            .main-link{
+                color: white;
+                margin: 11px 0;
+            }
             li {
                 border-top: 1px solid rgba(165, 165, 165, 0.5);
                 height: 42px;
