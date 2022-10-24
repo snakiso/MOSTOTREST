@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221013101441" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221024102001" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221013101441" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221013101441">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221024102001" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221024102001">
     <title>Объкты</title>
 </head>
 
@@ -146,55 +146,61 @@
  </div>
 </section>
   <section class="build-map">
- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221013101441" type="text/javascript"></script>
- <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20221013101441" type="text/javascript"></script>
- <script>
-  let pathToJson = './files/builds-done.json'
-  let objectsDone = document.querySelector('.objects-done');
-  let objectsProcess = document.querySelector('.objects-process');
-  objectsDone.addEventListener('click', () => {
-   pathToJson = './files/builds-done.json';
-   myMap.destroy();
-   ymaps.ready(init);
-  })
-  objectsProcess.addEventListener('click', () => {
-   pathToJson = './files/builds-process.json';
-    myMap.destroy();
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221024102001"
+    type="text/javascript"></script>
+  <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20221024102001" type="text/javascript"></script>
+  <script>
+    let stateObj = {
+      map: "map-1",
+    }
+    let pathToJson = './files/builds-done.json'
+    let objectsDone = document.querySelector('.objects-done');
+    let objectsProcess = document.querySelector('.objects-process');
+    objectsDone.addEventListener('click', () => {
+      pathToJson = './files/builds-done.json';
+      myMap.destroy();
+      ymaps.ready(init);
+      history.pushState(stateObj, "page 2", "map-done.html")
+    })
+    objectsProcess.addEventListener('click', () => {
+      pathToJson = './files/builds-process.json';
+      myMap.destroy();
+      ymaps.ready(init);
+      history.pushState(stateObj, "page 3", "map-process.html")
+    })
+    var myMap;
     ymaps.ready(init);
-  })
-  var myMap;
-  ymaps.ready(init);
-  function init() {
-   myMap = new ymaps.Map('map', {
-    center: [47.965267, 80.436241],
-    zoom: 4,
-    controls: ['zoomControl',]
-   }, {
-    // searchControlProvider: 'yandex#search'
-   }),
-    objectManager = new ymaps.ObjectManager({
-     // Чтобы метки начали кластеризоваться, выставляем опцию.
-     clusterize: true,
-     // ObjectManager принимает те же опции, что и кластеризатор.
-     gridSize: 30,
-     clusterDisableClickZoom: false,
-    });
+    function init() {
+      myMap = new ymaps.Map('map', {
+        center: [47.965267, 80.436241],
+        zoom: 4,
+        controls: ['zoomControl',]
+      }, {
+        // searchControlProvider: 'yandex#search'
+      }),
+        objectManager = new ymaps.ObjectManager({
+          // Чтобы метки начали кластеризоваться, выставляем опцию.
+          clusterize: true,
+          // ObjectManager принимает те же опции, что и кластеризатор.
+          gridSize: 30,
+          clusterDisableClickZoom: false,
+        });
 
-   // Чтобы задать опции одиночным объектам и кластерам,
-   // обратимся к дочерним коллекциям ObjectManager.
-   objectManager.objects.options.set('preset', 'islands#darkBlueCircleDotIcon');
-   objectManager.clusters.options.set('preset', 'islands#darkBlueCircleDotIcon');
-   myMap.geoObjects.add(objectManager);
-   myMap.behaviors
-   .disable(['rightMouseButtonMagnifier', "scrollZoom"])
-   $.ajax({
-    url: pathToJson
-   }).done(function (data) {
-    objectManager.add(data);
-   });
-  }        
- </script>
- <div id="map"></div>
+      // Чтобы задать опции одиночным объектам и кластерам,
+      // обратимся к дочерним коллекциям ObjectManager.
+      objectManager.objects.options.set('preset', 'islands#darkBlueCircleDotIcon');
+      objectManager.clusters.options.set('preset', 'islands#darkBlueCircleDotIcon');
+      myMap.geoObjects.add(objectManager);
+      myMap.behaviors
+        .disable(['rightMouseButtonMagnifier', "scrollZoom"])
+      $.ajax({
+        url: pathToJson
+      }).done(function (data) {
+        objectManager.add(data);
+      });
+    }        
+  </script>
+  <div id="map"></div>
 </section>
   <section class="all-objects">
  <div class="wrapper-1300">
@@ -311,8 +317,8 @@
 </footer>
  
 </body>
-<script src="./js/header.js?_v=20221013101441"></script>
-<script src="./js/swiper.js?_v=20221013101441"></script>
-<script src="./js/swiperCode.js?_v=20221013101441"></script>
+<script src="./js/header.js?_v=20221024102001"></script>
+<script src="./js/swiper.js?_v=20221024102001"></script>
+<script src="./js/swiperCode.js?_v=20221024102001"></script>
 
 </html>
