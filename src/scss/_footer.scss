@@ -146,6 +146,9 @@
     .left-block{
         margin-top: 70px;
         column-gap: 80px;
+        a{
+            display: none;
+        }
   }
   &__right-block{
     margin-top: 70px;
@@ -167,9 +170,9 @@
         margin-top: 40px;
     }
     .right-block{
-        margin-top: 40px;
+        margin-top: 20px;
         column-gap: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
     }
   }

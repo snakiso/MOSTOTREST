@@ -1,4 +1,5 @@
 .main-hero {
+ position: relative;
  .hero-slider {
   width: 100%;
   overflow: hidden;
@@ -37,6 +38,7 @@
       align-items: center;
       color: white;
       font-weight: 700;
+      column-gap: 10px;
      }
     }
    }
@@ -111,6 +113,23 @@
  }
 }
 
+.main-hero::before{
+ position: absolute;
+ content: '';
+ height: 8px;
+ width: 800px;
+ left: 15%;
+ bottom: -8px;
+ background: rgba(229, 176, 98, 1);
+}
+
+@media screen and (max-width: 1920px){
+  .main-hero::before{
+   width: 700px;
+   left: 7%;
+  }
+}
+
 @media screen and (max-width: 1300px) {
  .main-hero {
   .hero-slider {
@@ -130,12 +149,13 @@
 
    .buttons-block {
     justify-content: space-between;
-    top: 50%;
+    top: 38%;
     bottom: auto;
     width: 100%;
     .swiper-button-next,
     .swiper-button-prev {
      border: none;
+     width: 25px;
     }
 
     .swiper-button-next:hover,
@@ -144,5 +164,9 @@
     }
    }
   }
+ }
+ .main-hero::before{
+  left: 0;
+  width: 80%;
  }
 }

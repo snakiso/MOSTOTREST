@@ -73,18 +73,19 @@
         position: relative;
         display: flex;
         height: 42px;
+        margin: auto;
         margin-top: 30px;
-        justify-content: space-between;
+        max-width: 1300px;
         overflow: hidden;
         transition: all .3s;
         z-index: 5600;
 
         .header__nav:nth-child(1) {
-            margin-left: 25px;
+            padding-left: 25px;
         }
 
         .header__nav:nth-child(5) {
-            margin-right: 25px;
+            padding-right: 25px;
         }
          
         .header__nav:last-child{
@@ -94,18 +95,23 @@
                 }
             }
         }
-
+        .header__nav:hover{
+            background: rgb(255, 255, 255, 0.05);
+        }
         .header__nav {
-            width: 228px;
-            height: 42px;
+            padding: 0 20px;
+            width: 260px;
+            height: 100%;
             color: white;
-            border-top: 0.5px solid white;
             margin: 0;
             transition: all .5s;
              
             .main-link{
+                width: 100%;
                 color: white;
-                margin: 11px 0;
+                border-top: 0.5px solid white;
+                padding-top: 10px;
+                margin-bottom: 12px;
             }
             .main-link:hover{
                 color: rgba(32, 154, 215, 1);
@@ -190,6 +196,10 @@
 
         .header__nav {
             border-top: 0.5px solid #004A8C;
+            
+            .main-link{
+                border: none;
+            }
 
             li:hover {
                 a {

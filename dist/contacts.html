@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221024102001" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap&_v=20221031155032" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221024102001" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221024102001">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap&_v=20221031155032" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221031155032">
     <title>Контакты</title>
 </head>
 
@@ -149,7 +149,7 @@
         669-77-11</a>
     </div>
     <div class="contacts__map">
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221024102001"
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78&_v=20221031155032"
         type="text/javascript"></script>
       <script>
         var myMap;
@@ -198,11 +198,21 @@
       <div class="contacts__send">
         <h3>Связаться с нами</h3>
         <div class="inputs-container">
-          <input type="text" name="organization" placeholder="Организация*">
-          <input type="text" name="name" placeholder="ФИО">
-          <input type="text" name="position" placeholder="Должность">
-          <input type="text" name="phone" placeholder="Телефон">
-          <input type="text" name="mail" placeholder="E-mail">
+          <label>
+            <input required><span placeholder='Организация'></span>
+          </label>
+          <label>
+            <input required><span placeholder='ФИО'></span>
+          </label>
+          <label>
+            <input required><span placeholder='Должность'></span>
+          </label>
+          <label>
+            <input required><span placeholder='Телефон'></span>
+          </label>
+          <label>
+            <input required><span placeholder='E-mail'></span>
+          </label>
           <textarea name="text" placeholder="Сообщение"></textarea>
         </div>
         <div class="checked-block">
@@ -268,7 +278,7 @@
         </div>
     </div>
 </footer>
- <script src="./js/header.js?_v=20221024102001"></script>
+ <script src="./js/header.js?_v=20221031155032"></script>
 </body>
 
 </html>

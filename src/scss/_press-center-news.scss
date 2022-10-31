@@ -106,8 +106,13 @@
    flex-wrap: wrap;
    column-gap: 30px;
    row-gap: 30px;
-
+   .news:hover{
+    .news-title{
+      color: rgba(0, 74, 140, 1);
+    }
+   }
    .news {
+    cursor: pointer;
     max-width: 635px;
     border: 1px solid rgba(228, 228, 228, 1);
     a{

@@ -166,6 +166,10 @@
       margin-top: 120px;
       margin-bottom: 160px;
       position: relative;
+      
+      span{
+        visibility: hidden;
+      }
 
       .railway-slider {
         width: 100%;
@@ -251,6 +255,19 @@
           padding: 37px 30px;
         }
       }
+    }
+
+    .slide-description{
+      max-width: 1300px;
+      margin: auto;
+      font-size: 15px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .examples-container:last-child {
+    .slider-container {
+      margin-bottom: 40px;
     }
   }
 }

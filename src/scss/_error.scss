@@ -28,6 +28,12 @@
         a{
             display: inline-block;
             margin-top: 30px;
+            .btn-box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+            }
         }
     }
 }

@@ -3,7 +3,7 @@
 
  .wrapper-1300 {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 180px;
 
   .technoligies-button {
    background: none;
@@ -17,6 +17,7 @@
    justify-content: center;
    border-radius: 4px;
    margin-top: 100px;
+   column-gap: 10px;
   }
 
   .title {
@@ -34,7 +35,16 @@
     max-width: 560px;
    }
   }
-
+  .technologies:before{
+   position: absolute;
+   content: '';
+   height: 8px;
+   width: 80%;
+   background: rgba(229, 176, 98, 1);
+   bottom: -8px;
+   left: 50%;
+   transform: translateX(-50%);
+  }
   .technologies {
    background: rgba(0, 74, 140, 1);
    background-image: url(../img/technologies-bg.png);
@@ -137,7 +147,11 @@
      }
     }
    }
-
+   .technologies:before{
+    right: 0;
+    left: auto;
+    transform: none;
+   }
    .technoligies-button {
     position: absolute;
     bottom: 0;
@@ -145,4 +159,7 @@
    }
   }
  }
+  .main-technologies .wrapper-1300 .title{
+   padding-top: 70px;
+  }
 }

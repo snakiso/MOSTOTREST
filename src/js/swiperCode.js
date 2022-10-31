@@ -122,7 +122,7 @@ var swiper = new Swiper(".projects-slider", {
       slidesPerView: 'auto',
     },
     768: {
-      spaceBetween: 20,
+      sslidesPerView: 'auto'
     }
   }
 });

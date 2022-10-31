@@ -82,15 +82,35 @@
 
 @media screen and (max-width: 1300px) {
   .contacts-us {
+    min-height: 750px;
+
     .wrapper-1300 {
       left: 0;
 
+      h2 {
+        font-size: 28px;
+      }
+
       .contacts__send {
+        h3 {
+          font-size: 28px;
+        }
+
         .checked-block {
           justify-content: flex-start;
           flex-wrap: wrap;
         }
       }
     }
+  }
+
+  .contacts-us .wrapper-1300 .contacts__send p {
+    max-width: 250px;
+    font-size: 11px;
+  }
+
+  .contacts-us .wrapper-1300 .contacts__send .send-button {
+    width: 100%;
+    
   }
 }
