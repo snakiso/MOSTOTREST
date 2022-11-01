@@ -41,3 +41,12 @@
 .cookies.accepted{
  display: none;
 }
+
+@media screen and (max-width: 1300px){
+ .cookies{
+  width: calc(100% - 50px);
+  .inner-box{
+   flex-direction: column;
+  }
+ }
+}

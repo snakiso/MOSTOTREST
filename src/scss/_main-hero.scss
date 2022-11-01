@@ -1,5 +1,17 @@
 .main-hero {
  position: relative;
+ .message-me-mobile{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: 160px;
+  right: 25px;
+ }
  .hero-slider {
   width: 100%;
   overflow: hidden;
@@ -132,10 +144,16 @@
 
 @media screen and (max-width: 1300px) {
  .main-hero {
+  .message-me-mobile{
+    display: flex;
+  }
   .hero-slider {
    .swiper-wrapper {
     .swiper-slide {
      .wrapper-1300 {
+      .hero-button{
+        width: 160px;
+      }
       h1 {
        font-size: 34px;
       }

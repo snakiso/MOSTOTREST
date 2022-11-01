@@ -1971,6 +1971,19 @@ ul {
   position: relative;
 }
 
+.main-hero .message-me-mobile {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: 160px;
+  right: 25px;
+}
+
 .main-hero .hero-slider {
   width: 100%;
   overflow: hidden;
@@ -3678,6 +3691,14 @@ ul {
     padding-right: 25px;
   }
 
+  .cookies {
+    width: calc(100% - 50px);
+  }
+
+  .cookies .inner-box {
+    flex-direction: column;
+  }
+
   .header {
     height: 78px;
   }
@@ -4011,6 +4032,14 @@ ul {
 
   .history__inner-box {
     padding: 0 25px;
+  }
+
+  .main-hero .message-me-mobile {
+    display: flex;
+  }
+
+  .main-hero .hero-slider .swiper-wrapper .swiper-slide .wrapper-1300 .hero-button {
+    width: 160px;
   }
 
   .main-hero .hero-slider .swiper-wrapper .swiper-slide .wrapper-1300 h1 {
