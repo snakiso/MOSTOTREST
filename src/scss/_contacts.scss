@@ -2,7 +2,7 @@
     background-image: url(../img/contacts-bg.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-
+    position: relative;
     &__title-mobile {
         display: none;
     }
@@ -187,11 +187,21 @@
     }
 }
 
+.contacts::before{
+    background: rgba(229, 176, 98, 1);
+    content: '';
+    height: 2px;
+    position: absolute;
+    width: 49%;
+    top: 110px;
+    right: 0;
+}
+
 @media screen and (max-width: 1300px) {
     .contacts {
         .wrapper-1300 {
             flex-direction: column;
-
+            padding-top: 60px;
         }
         #map{
           min-height: 500px;
@@ -215,6 +225,10 @@
                 padding: 10px 0;
             }
         }
+    }
+    .contacts::before{
+        width: 93%;
+        top: 70px;
     }
 }
 

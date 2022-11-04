@@ -1,4 +1,4 @@
-.error{
+.error {
     min-height: 940px;
     background-image: url(../img/error-bg.png);
     background-repeat: no-repeat;
@@ -6,29 +6,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &__container{
+
+    &__container {
         text-align: center;
-        h1{
+
+        h1 {
             font-size: 240px;
             font-weight: 800;
             color: #004A8C;
             margin: 0;
         }
-        h5{
+
+        h5 {
             font-size: 38px;
             color: #004A8C;
             margin: 30px 0 0 0;
         }
-        p{
+
+        p {
             color: #1D1D1B;
             font-size: 20px;
             max-width: 420px;
             margin: 70px auto 0 auto;
         }
-        a{
+
+        a {
             display: inline-block;
             margin-top: 30px;
-            .btn-box{
+
+            .btn-box {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -38,8 +44,8 @@
     }
 }
 
-@media screen and (max-width: 1300px){
-    .error{
+@media screen and (max-width: 1300px) {
+    .error {
         background-image: none;
     }
 }
@@ -47,17 +53,25 @@
 @media screen and (max-width: 900px) {
     .error {
         min-height: 480px;
-        &__container{
-            h1{
+
+        &__container {
+            h1 {
                 font-size: 110px;
             }
-            h5{
+
+            h5 {
                 font-size: 28px;
+                max-width: 300px;
+                margin: auto;
             }
-            p{
+
+            p {
                 font-size: 14px;
                 margin-top: 20px;
                 padding: 0 25px;
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }

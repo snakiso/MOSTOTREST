@@ -166,9 +166,9 @@
       margin-top: 120px;
       margin-bottom: 160px;
       position: relative;
-      
-      span{
-        visibility: hidden;
+
+      span {
+        display: none;
       }
 
       .railway-slider {
@@ -257,11 +257,13 @@
       }
     }
 
-    .slide-description{
+    .slide-description {
       max-width: 1300px;
       margin: auto;
       font-size: 15px;
       margin-bottom: 100px;
+      padding-top: 40px;
+      padding-left: 20px
     }
   }
 
@@ -313,7 +315,7 @@
 
   .activity-examples {
     .examples-container {
-      margin-top: 80px;
+      margin-top: 40px;
 
       .wrapper-1300 {
         h3 {
@@ -346,5 +348,9 @@
     bottom: -50px;
     top: auto;
     left: 0;
+  }
+
+  .activity-examples .examples-container .slider-container {
+    margin-bottom: 80px;
   }
 }

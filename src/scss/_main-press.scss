@@ -1,5 +1,6 @@
 .main-press {
  margin: 170px 0;
+ position: relative;
 
  .wrapper-1300 {
   display: flex;
@@ -149,9 +150,19 @@
   }
  }
 }
+.main-press::before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: rgba(229, 176, 98, 1);
+ height: 2px;
+ width: 40%;
+}
 
 @media screen and (max-width: 1300px){
  .main-press{
+  margin-top: 100px;
   .wrapper-1300{
    padding-bottom: 100px;
    flex-direction: column;
@@ -185,6 +196,9 @@
 }
 
 @media screen and (max-width: 500px){
+ .main-press::before{
+  width: 80%;
+ }
  .main-press .wrapper-1300{
   padding-bottom: 170px;
  }
@@ -200,5 +214,6 @@
 }
 .main-press .wrapper-1300 .left-block h2{
  font-size: 36px;
+ padding-top: 15px;
 }
 }

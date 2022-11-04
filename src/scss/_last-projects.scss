@@ -87,6 +87,7 @@
 @media screen and (max-width: 1300px){
     .last-projects{
         .wrapper-1300{
+            padding-top: 60px;
             h3{
                 font-size: 28px;
             }
@@ -97,5 +98,9 @@
         .buttons-block{
             padding: 40px 25px !important;
         }
+                .last-projects-slider{
+                    padding-bottom: 30px;
+                }
     }
+        
 }

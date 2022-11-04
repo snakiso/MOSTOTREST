@@ -198,6 +198,7 @@
  .directors-title {
   h1 {
    font-size: 34px;
+   max-width: 300px;
   }
 
   p {
@@ -207,6 +208,7 @@
 
  .directors-block {
   .wrapper-1300 {
+   margin: 80px auto;
    h6 {
     font-size: 18px;
    }
@@ -239,6 +241,7 @@
  }
 
  .one-director .wrapper-1300 {
+  margin: 100px auto;
   flex-direction: column;
   .director-photo{
    img{

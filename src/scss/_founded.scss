@@ -135,6 +135,10 @@
 
 @media screen and (max-width: 1300px) {
     .founded {
+        &__wrapper {
+            padding-top: 80px;
+        }
+
         &__title {
             flex-direction: column;
             padding: 0 25px;
@@ -203,7 +207,8 @@
                     font-size: 40px;
                     margin-top: 40px;
                 }
-                p{
+
+                p {
                     margin: 20px 0 40px 0;
                     padding: 0 25px;
                 }

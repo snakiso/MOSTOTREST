@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-main{
+main {
     overflow-x: hidden;
 }
 
@@ -65,6 +65,20 @@ button {
 ul {
     padding: 0;
     list-style: none;
+}
+
+.bottom-line {
+    position: relative;
+}
+
+.bottom-line::before {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 8px;
+    bottom: -8px;
+    background: rgba(229, 176, 98, 1);
+    right: 20%;
 }
 
 .wrapper-1300 {
@@ -125,7 +139,7 @@ ul {
         border-right: none;
     }
 
-    .change-page.active{
+    .change-page.active {
         color: rgba(0, 74, 140, 1);
         border: 1px solid rgba(0, 74, 140, 1);
         font-weight: 700;
@@ -139,12 +153,13 @@ ul {
         background: none;
         border: 1px solid rgba(165, 165, 165, 1);
     }
-    
-    .prev-page:before, .next-page::before{
+
+    .prev-page:before,
+    .next-page::before {
         position: absolute;
         content: '';
         border-bottom: 1px solid rgba(165, 165, 165, 1);
-        border-left: 1px solid rgba(165, 165, 165, 1) ;
+        border-left: 1px solid rgba(165, 165, 165, 1);
         top: 40%;
         width: 8px;
         height: 8px;
@@ -152,30 +167,64 @@ ul {
         transform: rotate(45deg);
     }
 
-        .next-page::before{
-            transform: rotate(-135deg);
-            right: 12px;
-            left: auto;
-        }
+    .next-page::before {
+        transform: rotate(-135deg);
+        right: 12px;
+        left: auto;
+    }
 
-    .prev-page{
+    .prev-page {
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
         border-right: none;
     }
-    
-    .next-page{
+
+    .next-page {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
     }
 }
 
+  .mini-nav{
+    display: flex;
+    column-gap: 20px;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    .active-link{
+        color: rgba(165, 165, 165, 1);
+    }
+    a{
+        color: rgba(0, 74, 140, 1);
+        position: relative;
+        font-size: 12px;
+    }
+    a:not(:first-child)::before{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 1px;
+        background: rgba(165, 165, 165, 1);
+        left: -10px;
+    }
+  }
+
 @media screen and (max-width: 1300px) {
-    .wrapper-1300{
+    .wrapper-1300 {
         width: 100%;
         padding-left: 25px;
         padding-right: 25px;
     }
+
+    .bottom-line::before {
+        right: 0;
+        width: 70%
+    }
+        .mini-nav{
+            padding-left: 30px;
+            row-gap: 10px
+        }
 }
 
 @import 'cookies';
